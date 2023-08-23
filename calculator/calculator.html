@@ -1,0 +1,53 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<title>JavaScript Calculator</title>  
+<link href="style.css" rel="stylesheet"> 
+  
+</head>  
+<body>  
+<h1>Calculator</h1>  
+<div class="formstyle">  
+<form name="formCalc">  
+      
+<input id="calc" type="text" name="answer"> <br> <br>  
+
+<input type="button" value="1" onclick="formCalc.answer.value += '1'">  
+<input type="button" value="2" onclick="formCalc.answer.value += '2'">  
+<input type="button" value="3" onclick="formCalc.answer.value += '3'">  
+<input type="button" value="+" onclick="formCalc.answer.value += '+'">  
+<input type="button" value="^" onclick="formCalc.answer.value += '**'">    
+<br> <br>  
+    
+<input type="button" value="4" onclick="formCalc.answer.value += '4'">  
+<input type="button" value="5" onclick="formCalc.answer.value += '5'">  
+<input type="button" value="6" onclick="formCalc.answer.value += '6'">  
+<input type="button" value="-" onclick="formCalc.answer.value += '-'">  
+<input type="button" value="√" onclick="calculateSquareRoot()">
+<br> <br>  
+    
+<input type="button" value="7" onclick="formCalc.answer.value += '7'">  
+<input type="button" value="8" onclick="formCalc.answer.value += '8'">  
+<input type="button" value="9" onclick="formCalc.answer.value += '9'">  
+<input type="button" value="*" onclick="formCalc.answer.value += '*'">  
+<input type="button" value="%" onclick="formCalc.answer.value +='%'">
+<br> <br>  
+    
+    
+<input type="button" value="/" onclick="formCalc.answer.value += '/'">  
+<input type="button" value="0" onclick="formCalc.answer.value += '0'">  
+<input type="button" value="." onclick="formCalc.answer.value += '.'">  
+<input type="button" value="=" onclick="formCalc.answer.value = eval(formCalc.answer.value)">  
+<input type="button" value="π" onclick="formCalc.answer.value += '3.14'">  
+
+<br>   
+<input type="button" value="C" onclick="formCalc.answer.value = ' '" id="clear">  
+<input type="button" value="!" onclick="calculateFactorial()">
+<input type="button" value="³√" onclick="calculateCubicRoot()">
+<input type="button" value="±" onclick="changeSign()">
+  
+</form>  
+</div>  
+<script src="script.js"></script>
+</body>
+</html>
